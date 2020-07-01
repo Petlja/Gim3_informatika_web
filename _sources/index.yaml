@@ -18,16 +18,15 @@ lessons:
     activities:
       - type: reading
         title: Приказивање HTML документа
-        file: 1_html/01_prikazivanje_html.rst
+        file: 01_prikazivanje_html.rst
         guid: 6ae342c1-8b4c-4ae6-ab81-70a98da37257
       - type: reading
         title: Елементи HTML документа
-        file: 1_html/02a_elementi_html_citanje.rst
+        file: 02a_elementi_html_citanje.rst
         guid: ad89acb6-6d75-4872-bfad-c8d1be2a30c8
-    activities:
       - type: reading ### tasks?
         title: Елементи HTML документа - задаци
-        file: 1_html/02c_elementi_html_zadaci.rst
+        file: 02c_elementi_html_zadaci.rst
         guid: f592e6bf-c76b-410d-9255-1105df719530
   - title: Форматирање текста
     guid: 4a7a9e09-fd2d-4d83-9a45-34f70e3c3225
@@ -35,15 +34,15 @@ lessons:
     activities:
       - type: reading
         title: Форматирање текста
-        file: 1_html/03a_formatiranje_teksta_citanje.rst
+        file: 03a_formatiranje_teksta_citanje.rst
         guid: e8e26581-5538-4b78-8a84-0a276ef8a067
       - type: quiz
         title: Форматирање текста - питања
-        file: 1_html/03b_formatiranje_teksta_pitanja.rst
+        file: 03b_formatiranje_teksta_pitanja.rst
         guid: 88d5223e-ab8d-49c3-a637-b0020112a359
       - type: reading ### tasks?
         title: Форматирање текста - задаци
-        file: 1_html/03c_formatiranje_teksta_zadaci.rst
+        file: 03c_formatiranje_teksta_zadaci.rst
         guid: 1e189697-a803-4fd8-b9ec-3c76e22e1bf7
   - title: Листе и табеле
     guid: 9cd8a3a8-b9c6-4f37-a38a-34282d2c09b4
@@ -51,27 +50,27 @@ lessons:
     activities:
       - type: reading
         title: Листе
-        file: 1_html/04a_liste_citanje.rst
+        file: 04a_liste_citanje.rst
         guid: 0c8b0b72-b340-4732-b115-e66dd4522990
       - type: quiz
         title: Листе - питања
-        file: 1_html/04b_liste_pitanja.rst
+        file: 04b_liste_pitanja.rst
         guid: 4f3c27f4-7a6e-4b04-b652-0e6e0edefa41
       - type: reading ### tasks?
         title: Листе - задаци
-        file: 1_html/04c_liste_zadaci.rst
+        file: 04c_liste_zadaci.rst
         guid: 7363ad2b-bd9d-4a52-9f10-b2bb82699c1b
       - type: reading
         title: Табеле
-        file: 1_html/04d_tabele_citanje.rst
+        file: 04d_tabele_citanje.rst
         guid: 843f3739-6d1e-495a-8683-5d4fe4198344
       - type: quiz
         title: Табеле - питања
-        file: 1_html/04e_tabele_pitanja.rst
+        file: 04e_tabele_pitanja.rst
         guid: 966e677a-c460-4b76-91f6-dcf6f3e38dfd
       - type: reading ### tasks?
         title: Табеле - задаци
-        file: 1_html/04f_tabele_zadaci.rst
+        file: 04f_tabele_zadaci.rst
         guid: 5097f6b8-7e7c-42b1-a8b1-e7605e2bb46a
 
   - title: Повезивање докумената
@@ -80,15 +79,15 @@ lessons:
     activities:
       - type: reading
         title: Повезивање докумената
-        file: 1_html/05a_povezivanje_dokumenata_citanje.rst
+        file: 05a_povezivanje_dokumenata_citanje.rst
         guid: 7778650d-29dd-4d75-a4fd-1e7844a262a6
       - type: quiz
         title: Повезивање докумената - питања
-        file: 1_html/05b_povezivanje_dokumenata_pitanja.rst
+        file: 05b_povezivanje_dokumenata_pitanja.rst
         guid: d3901066-6854-46c1-ace0-e16fa5539e4e
       - type: reading ### tasks?
         title: Повезивање докумената - задаци
-        file: 1_html/05c_povezivanje_dokumenata_zadaci.rst
+        file: 05c_povezivanje_dokumenata_zadaci.rst
         guid: 2527d450-422a-4537-8c75-e8b5a15f44ca
   - title: Мултимедијални садржаји
     guid: a7dba7da-f4f5-49fb-b31f-59fc57959307
@@ -96,13 +95,13 @@ lessons:
     activities:
       - type: reading
         title: Мултимедијални садржаји
-        file: 1_html/06a_multimedija_citanje.rst
+        file: 06a_multimedija_citanje.rst
         guid: a85e5cea-2de0-4ff5-8ebe-0917fabace4e
       - type: quiz
         title: Мултимедијални садржаји - питања
-        file: 1_html/06b_multimedija_pitanja.rst
+        file: 06b_multimedija_pitanja.rst
         guid: 6114b0e9-a572-4c39-8234-58a3a905a62c
       - type: reading ### tasks?
         title: Мултимедијални садржаји - задаци
-        file: 1_html/06c_multimedija_zadaci.rst
+        file: 06c_multimedija_zadaci.rst
         guid: 9748c7c6-03c6-4918-9ded-e10d51c494f0
