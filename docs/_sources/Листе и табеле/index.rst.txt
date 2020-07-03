@@ -1,0 +1,13 @@
+==============
+Листе и табеле
+==============
+
+.. toctree:: 
+    :maxdepth: 1
+
+    04a_liste_citanje.rst
+    04b_liste_pitanja.rst
+    04c_liste_zadaci.rst
+    04d_tabele_citanje.rst
+    04e_tabele_pitanja.rst
+    04f_tabele_zadaci.rst
