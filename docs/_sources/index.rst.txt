@@ -3,7 +3,7 @@
 =====================================
 
 Шта ћете научити:
-    - Научићеш основе језика HTML, CSS, и JavaScript
+    - Основе језика HTML, CSS, и JavaScript
 
 Потребно:
     - Рачунар са савременим прегледачем (браузером)
@@ -27,3 +27,7 @@
     CSS својства <2_CSS_02_CSS_svojstva/index>
     CSS селектори <2_CSS_03_CSS_selektori/index>
     Распоред елемената <2_CSS_04_raspored_elemenata/index>
+    Bootstrap библиотека <3_Bootstrap_01_biblioteka/index>
+    Bootstrap класе <3_Bootstrap_02_klase/index>
+    Bootstrap подршка компонентама <3_Bootstrap_03_komponente/index>
+    Bootstrap и распоређивање елемената <3_Bootstrap_04_raspored/index>

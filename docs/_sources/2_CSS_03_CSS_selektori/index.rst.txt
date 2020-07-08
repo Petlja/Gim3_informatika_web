@@ -6,3 +6,5 @@ CSS селектори
     :maxdepth: 1
 
     03a_css_selektori_citanje.rst
+    03b_css_selektori_pitanja.rst
+    03c_css_selektori_zadaci.rst
