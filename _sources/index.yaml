@@ -246,3 +246,98 @@ lessons:
         title: Bootstrap и распоређивање елемената - задаци
         file: 04c_bootstrap_raspored_zadaci.rst
         guid: dbec1597-0a5a-4ecf-9ab9-b4f6f083ab86
+### JavaScript
+  - title: Јава скрипт
+    folder: 4_JS_01_izvrsavanje
+    guid: c7ff09ff-6638-4a03-907a-adde7c81da7b
+    description: Јава скрипт
+    activities:
+      - type: reading
+        title: Увод у јава скрипт
+        file: 01a_js_uvod_citanje.rst
+        guid: 93edde33-d98f-4b03-bbaa-0b234ce1b1e9
+      - type: reading
+        title: Извршавање јава скриптова
+        file: 01b_js_izvrsavanje_citanje.rst
+        guid: 9581803d-c298-491a-b781-040c8addebc9
+  - title: Основе језика JavaScript
+    folder: 4_JS_02_promenljive_i_izrazi
+    guid: 7bdd4b79-2836-4163-abbb-3ffe80c0de5e
+    description: Основе језика JavaScript (променљиве и изрази)
+    activities:
+      - type: reading
+        title: Променљиве
+        file: 02a_js_promenljive_citanje.rst
+        guid: a8228c63-a0a9-4cd3-bb83-0e41fc21af8d
+      - type: reading
+        title: Нумеричке вредности и изрази
+        file: 02b_js_brojevi_citanje.rst
+        guid: 924f5a44-6638-40f2-8260-c761067297e9
+      - type: reading
+        title: Текстуалне вредности и изрази
+        file: 02c_js_tekstualne_vrednosti_citanje.rst
+        guid: e4409df0-f107-49f9-90fe-d5e5ca19915c
+      - type: reading
+        title: Логичке вредности и изрази
+        file: 02d_js_logicke_vrednosti_citanje.rst
+        guid: 31e6b8c6-6450-4df8-89b7-6a790d5e38a5
+  - title: Контрола тока програма
+    folder: 4_JS_03_kontrola_toka
+    guid: 141140d9-00b6-4ca1-8726-237dcdc49531
+    description: Контрола тока програма
+    activities:
+      - type: reading
+        title: Гранања у Јава-скрипту
+        file: 03a_js_grananja_citanje.rst
+        guid: c8dd6a99-7328-469b-8778-a5e24a10facf
+      - type: reading
+        title: Петље у Јава-скрипту
+        file: 03b_js_petlje_citanje.rst
+        guid: 6f329c1a-3492-4ba5-8480-9ea6155f7caa
+      - type: reading
+        title: Функције у Јава-скрипту
+        file: 03c_js_funkcije_citanje.rst
+        guid: 0e3021db-e958-4e7d-97dc-40a31143ebdd
+  - title: Сложене променљиве
+    folder: 4_JS_04_slozene_promenljive
+    guid: 7f56f5bd-5a8d-4eb1-9905-e8cc5ccccbea
+    description: Сложене променљиве
+    activities:
+      - type: reading
+        title: Објекти
+        file: 04a_js_objekti_citanje.rst
+        guid: de033902-d47a-4133-a57e-5801b169dde8
+      - type: reading
+        title: Низови
+        file: 04b_js_nizovi_citanje.rst
+        guid: 8cd4e1dc-43a6-4720-b4d9-d3b1043c45f6
+      - type: reading
+        title: Методи - функције у објектима
+        file: 04c_js_metodi_citanje.rst
+        guid: a3429b59-52a5-4c82-a8ec-0840cbfbe14a
+
+  - title: Интерактивне веб стране
+    folder: 4_JS_05_interaktivne_strane
+    guid: f348bf0f-15fb-4e34-b128-8d5e4d5a9498
+    description: Интерактивне веб стране
+    activities:
+      - type: reading
+        title: Догађаји
+        file: 05a_js_dogadjaji_citanje.rst
+        guid: 705a3317-ab00-49bd-95c7-d6b5a9766021
+      - type: reading
+        title: Дугмад
+        file: 05b_js_dugmad_citanje.rst
+        guid: d5909e75-f0f7-4c64-86a5-70fbb6b40639
+      - type: reading
+        title: Поља за унос података
+        file: 05c_js_polja_za_unos_citanje.rst
+        guid: 6a90eb2e-8cbe-4c3b-9fbf-029217058686
+      - type: reading
+        title: Листе за одабир вредности
+        file: 05d_js_liste_za_odabir_citanje.rst
+        guid: 1898d1d5-5a04-49b7-83d2-f7d17b7db697
+      - type: reading
+        title: Модални дијалози
+        file: 05e_js_modalni_dijalozi_citanje.rst
+        guid: 9c8f5215-689c-4d04-9a81-44b444757173
