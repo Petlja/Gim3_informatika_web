@@ -281,63 +281,70 @@ lessons:
         title: Логичке вредности и изрази
         file: 02d_js_logicke_vrednosti_citanje.rst
         guid: 31e6b8c6-6450-4df8-89b7-6a790d5e38a5
+      - type: reading
+        title: Објекти
+        file: 02e_js_objekti_citanje.rst
+        guid: de033902-d47a-4133-a57e-5801b169dde8
+      - type: reading
+        title: Низови
+        file: 042f_js_nizovi_citanje.rst
+        guid: 8cd4e1dc-43a6-4720-b4d9-d3b1043c45f6
+  - title: Функције, методе, догађаји
+    folder: 4_JS_03_funkcije_metode_dogadjaji
+    guid: 7f56f5bd-5a8d-4eb1-9905-e8cc5ccccbea
+    description: Функције, методе, догађаји
+    activities:
+      - type: reading
+        title: Функције у Јава-скрипту
+        file: 03a_js_funkcije_citanje.rst
+        guid: 0e3021db-e958-4e7d-97dc-40a31143ebdd
+      - type: reading
+        title: Методи - функције у објектима
+        file: 03b_js_metodi_citanje.rst
+        guid: a3429b59-52a5-4c82-a8ec-0840cbfbe14a
+      - type: reading
+        title: Догађаји
+        file: 03c_js_dogadjaji_citanje.rst
+        guid: 705a3317-ab00-49bd-95c7-d6b5a9766021
+  - title: Веб интерфејс
+    folder: 4_JS_04_veb_interfejs
+    guid: f348bf0f-15fb-4e34-b128-8d5e4d5a9498
+    description: Веб интерфејс
+    activities:
+      - type: reading
+        title: Дугмад
+        file: 04a_js_dugmad_citanje.rst
+        guid: d5909e75-f0f7-4c64-86a5-70fbb6b40639
+      - type: reading
+        title: Поља за унос података
+        file: 04b_js_polja_za_unos_citanje.rst
+        guid: 6a90eb2e-8cbe-4c3b-9fbf-029217058686
+      - type: reading
+        title: Листе за одабир вредности
+        file: 04c_js_liste_za_odabir_citanje.rst
+        guid: 1898d1d5-5a04-49b7-83d2-f7d17b7db697
+      - type: reading
+        title: Модални дијалози
+        file: 04d_js_modalni_dijalozi_citanje.rst
+        guid: 9c8f5215-689c-4d04-9a81-44b444757173
   - title: Контрола тока програма
-    folder: 4_JS_03_kontrola_toka
+    folder: 4_JS_05_kontrola_toka
     guid: 141140d9-00b6-4ca1-8726-237dcdc49531
     description: Контрола тока програма
     activities:
       - type: reading
         title: Гранања у Јава-скрипту
-        file: 03a_js_grananja_citanje.rst
+        file: 05a_js_grananja_citanje.rst
         guid: c8dd6a99-7328-469b-8778-a5e24a10facf
       - type: reading
+        title: Употреба гранања у веб странама
+        file: 05b_js_grananja_veb_citanje.rst
+        guid: 1bb96271-cd3e-42b2-97f0-72dd2f4b7899
+      - type: reading
         title: Петље у Јава-скрипту
-        file: 03b_js_petlje_citanje.rst
+        file: 05c_js_petlje_citanje.rst
         guid: 6f329c1a-3492-4ba5-8480-9ea6155f7caa
       - type: reading
-        title: Функције у Јава-скрипту
-        file: 03c_js_funkcije_citanje.rst
-        guid: 0e3021db-e958-4e7d-97dc-40a31143ebdd
-  - title: Сложене променљиве
-    folder: 4_JS_04_slozene_promenljive
-    guid: 7f56f5bd-5a8d-4eb1-9905-e8cc5ccccbea
-    description: Сложене променљиве
-    activities:
-      - type: reading
-        title: Објекти
-        file: 04a_js_objekti_citanje.rst
-        guid: de033902-d47a-4133-a57e-5801b169dde8
-      - type: reading
-        title: Низови
-        file: 04b_js_nizovi_citanje.rst
-        guid: 8cd4e1dc-43a6-4720-b4d9-d3b1043c45f6
-      - type: reading
-        title: Методи - функције у објектима
-        file: 04c_js_metodi_citanje.rst
-        guid: a3429b59-52a5-4c82-a8ec-0840cbfbe14a
-
-  - title: Интерактивне веб стране
-    folder: 4_JS_05_interaktivne_strane
-    guid: f348bf0f-15fb-4e34-b128-8d5e4d5a9498
-    description: Интерактивне веб стране
-    activities:
-      - type: reading
-        title: Догађаји
-        file: 05a_js_dogadjaji_citanje.rst
-        guid: 705a3317-ab00-49bd-95c7-d6b5a9766021
-      - type: reading
-        title: Дугмад
-        file: 05b_js_dugmad_citanje.rst
-        guid: d5909e75-f0f7-4c64-86a5-70fbb6b40639
-      - type: reading
-        title: Поља за унос података
-        file: 05c_js_polja_za_unos_citanje.rst
-        guid: 6a90eb2e-8cbe-4c3b-9fbf-029217058686
-      - type: reading
-        title: Листе за одабир вредности
-        file: 05d_js_liste_za_odabir_citanje.rst
-        guid: 1898d1d5-5a04-49b7-83d2-f7d17b7db697
-      - type: reading
-        title: Модални дијалози
-        file: 05e_js_modalni_dijalozi_citanje.rst
-        guid: 9c8f5215-689c-4d04-9a81-44b444757173
+        title: Употреба петљи у веб странама
+        file: 05d_js_petlje_veb_citanje.rst
+        guid: 77dbb64a-73ed-46cf-a893-e760ab977e93
