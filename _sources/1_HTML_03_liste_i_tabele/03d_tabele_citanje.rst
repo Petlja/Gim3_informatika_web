@@ -37,7 +37,7 @@
         <tr>
     </thead>
 
-- Унутар тела табеле (<tbody>), редови имају ћелије табеле окружене ознакама <td> и </td>.
+- Унутар тела табеле (<tbody>), редови имају ћелије табеле окружене ознакама <td> и </td> (енгл. *table data*).
 
 .. code-block:: html
 
@@ -79,3 +79,77 @@
 .. image:: ../../_images/html/web_nikola_tesla_ordenje.png
     :width: 600px
     :align: center
+
+|
+
+Кôд целог *HTML* документа је дат у следећем листингу, који можете да испробате без копирања, у оквиру ове стане.
+
+.. activecode:: tabela_html
+   :language: html
+   :nocodelens:
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>JS Bin</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Назив</th><th>Земља</th><th>Година</th>
+                <tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Орден Светог Саве</td><td>Србија</td><td>1892</td>
+                </tr>
+                <tr>
+                    <td>Медаља Универзитета у Паризу</td><td>Француска</td><td>1937</td>
+                </tr>
+                <tr>
+                    <td>Орден белог лава</td><td>Чехословачка</td><td>1937</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+
+Са стилизовањем табела (и других елемената) ћемо се упознати ускоро. У међувремену, поменимо само да се писањем на пример ``<table border="solid 1px">`` уместо само ``<table>`` добија табела у којој су појединачна поља уоквирена, што је чини знатно прегледнијом: 
+
+.. activecode:: tabela_okvir_html
+   :language: html
+   :nocodelens:
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>JS Bin</title>
+    </head>
+    <body>
+        <table border="solid 1px">
+            <thead>
+                <tr>
+                    <th>Назив</th><th>Земља</th><th>Година</th>
+                <tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Орден Светог Саве</td><td>Србија</td><td>1892</td>
+                </tr>
+                <tr>
+                    <td>Медаља Универзитета у Паризу</td><td>Француска</td><td>1937</td>
+                </tr>
+                <tr>
+                    <td>Орден белог лава</td><td>Чехословачка</td><td>1937</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+
+Употреба атрибута ``border`` није препоручени начин стилизовања табеле (о чему ће још бити речи), али га можете користити да бисте јасније видели табеле које правите током вежбања.

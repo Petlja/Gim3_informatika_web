@@ -138,7 +138,7 @@ lessons:
         title: CSS својства - питања
         file: 02b_css_svojstva_pitanja.rst
         guid: 9c838d88-5572-4bb6-9233-71a7d811871c
-      - type: reading
+      - type: reading ### tasks?
         title: CSS својства - задаци
         file: 02c_css_svojstva_zadaci.rst
         guid: 02f77f91-4eeb-4ab8-bda0-2c4574abcb77
@@ -155,7 +155,7 @@ lessons:
         title: CSS селектори - питања
         file: 03b_css_selektori_pitanja.rst
         guid: 8f6017b8-d952-4b54-b267-ac898124867a
-      - type: reading
+      - type: reading ### tasks?
         title: CSS селектори - задаци
         file: 03c_css_selektori_zadaci.rst
         guid: 58b7d53e-2d68-4adc-8f06-00125ed4004a
@@ -172,7 +172,7 @@ lessons:
         title: Распоред елемената - питања
         file: 04b_raspored_elemenata_pitanja.rst
         guid: 2a4df725-d5c1-4e17-a451-9ce23c9bf426
-      - type: reading
+      - type: reading ### tasks?
         title: Распоред елемената - задаци
         file: 04c_raspored_elemenata_zadaci.rst
         guid: a9b8eeae-71a9-4890-b1ad-323fb27df858
@@ -191,10 +191,6 @@ lessons:
         title: Bootstrap библиотека - питања
         file: 01b_bootstrap_biblioteka_pitanja.rst
         guid: 47040b4a-683e-4c3c-8b9b-6fdde40e24b7
-      - type: reading ### zadaci
-        title: Bootstrap библиотека - задаци
-        file: 01c_bootstrap_biblioteka_zadaci.rst
-        guid: 302b081c-41dd-49e6-bc6f-c1ebe3808fbd
   - title: Bootstrap класе
     folder: 3_Bootstrap_02_klase
     guid: 796051c5-3193-42f7-8505-3052b6c622a7
@@ -260,10 +256,14 @@ lessons:
         title: Извршавање јава скриптова
         file: 01b_js_izvrsavanje_citanje.rst
         guid: 9581803d-c298-491a-b781-040c8addebc9
-  - title: Основе језика JavaScript
+      - type: quiz
+        title: Извршавање јава скриптова - питања
+        file: 01c_js_izvrsavanje_pitanja.rst
+        guid: e625a46c-cd55-49ac-bdc8-0b71d304513c
+  - title: Променљиве и изрази
     folder: 4_JS_02_promenljive_i_izrazi
     guid: 7bdd4b79-2836-4163-abbb-3ffe80c0de5e
-    description: Основе језика JavaScript (променљиве и изрази)
+    description: Променљиве и изрази
     activities:
       - type: reading
         title: Променљиве
@@ -281,70 +281,112 @@ lessons:
         title: Логичке вредности и изрази
         file: 02d_js_logicke_vrednosti_citanje.rst
         guid: 31e6b8c6-6450-4df8-89b7-6a790d5e38a5
+      - type: quiz
+        title: Основни типови - питања
+        file: 02e_js_osnovni_tipovi_pitanja.rst
+        guid: f507142a-c10f-41ee-b7bf-dc5c3633db26
+      - type: reading ### tasks?
+        title: Основни типови - задаци
+        file: 02f_js_osnovni_tipovi_zadaci.rst
+        guid: d5e0f87a-f942-44f0-af83-54b9a34237bf
+  - title: Сложени типови података
+    folder: 4_JS_03_slozeni_tipovi_podataka
+    guid: 948f7f69-4786-4cda-8b6a-5581f29ce1a1
+    description: Сложени типови података
+    activities:
       - type: reading
         title: Објекти
-        file: 02e_js_objekti_citanje.rst
+        file: 03a_js_objekti_citanje.rst
         guid: de033902-d47a-4133-a57e-5801b169dde8
       - type: reading
         title: Низови
-        file: 042f_js_nizovi_citanje.rst
+        file: 03b_js_nizovi_citanje.rst
         guid: 8cd4e1dc-43a6-4720-b4d9-d3b1043c45f6
+      - type: quiz
+        title: Сложени типови података - питања
+        file: 03c_js_objekti_i_nizovi_pitanja.rst
+        guid: 611fef04-da2f-449e-a4ef-e7c7244fec81
+      - type: reading ### tasks?
+        title: Сложени типови података - задаци
+        file: 03d_js_objekti_i_nizovi_zadaci.rst
+        guid: 2d95fc6f-9767-455a-ba43-0adfbc2b59b5
+
   - title: Функције, методе, догађаји
-    folder: 4_JS_03_funkcije_metode_dogadjaji
+    folder: 4_JS_04_funkcije_metode_dogadjaji
     guid: 7f56f5bd-5a8d-4eb1-9905-e8cc5ccccbea
     description: Функције, методе, догађаји
     activities:
       - type: reading
         title: Функције у Јава-скрипту
-        file: 03a_js_funkcije_citanje.rst
+        file: 04a_js_funkcije_citanje.rst
         guid: 0e3021db-e958-4e7d-97dc-40a31143ebdd
       - type: reading
         title: Методи - функције у објектима
-        file: 03b_js_metodi_citanje.rst
+        file: 04b_js_metodi_citanje.rst
         guid: a3429b59-52a5-4c82-a8ec-0840cbfbe14a
       - type: reading
         title: Догађаји
-        file: 03c_js_dogadjaji_citanje.rst
+        file: 04c_js_dogadjaji_citanje.rst
         guid: 705a3317-ab00-49bd-95c7-d6b5a9766021
+      - type: quiz
+        title: Функције, методе, догађаји -  питања
+        file: 04d_js_fmd_pitanja.rst
+        guid: ac060663-a768-41e1-b85a-e47bc45ccc36
+      - type: reading ### tasks?
+        title: Функције, методе, догађаји -  задаци
+        file: 04e_js_fmd_zadaci.rst
+        guid: 0193180b-89a4-4f89-82e4-17f8c155cc2e
   - title: Веб интерфејс
-    folder: 4_JS_04_veb_interfejs
+    folder: 4_JS_05_veb_interfejs
     guid: f348bf0f-15fb-4e34-b128-8d5e4d5a9498
     description: Веб интерфејс
     activities:
       - type: reading
         title: Дугмад
-        file: 04a_js_dugmad_citanje.rst
+        file: 05a_js_dugmad_citanje.rst
         guid: d5909e75-f0f7-4c64-86a5-70fbb6b40639
       - type: reading
         title: Поља за унос података
-        file: 04b_js_polja_za_unos_citanje.rst
+        file: 05b_js_polja_za_unos_citanje.rst
         guid: 6a90eb2e-8cbe-4c3b-9fbf-029217058686
       - type: reading
         title: Листе за одабир вредности
-        file: 04c_js_liste_za_odabir_citanje.rst
+        file: 05c_js_liste_za_odabir_citanje.rst
         guid: 1898d1d5-5a04-49b7-83d2-f7d17b7db697
       - type: reading
         title: Модални дијалози
-        file: 04d_js_modalni_dijalozi_citanje.rst
+        file: 05d_js_modalni_dijalozi_citanje.rst
         guid: 9c8f5215-689c-4d04-9a81-44b444757173
+      - type: quiz
+        title: Веб интерфејс - питања
+        file: 05e_js_veb_interfejs_pitanja.rst
+        guid: 40dd298e-1962-4595-85c2-10de9552842d
+      - type: reading ### tasks?
+        title: Веб интерфејс - задаци
+        file: 05f_js_veb_interfejs_zadaci.rst
+        guid: 2e2f64a1-d7d8-47c8-b7d2-c148d3458224
   - title: Контрола тока програма
-    folder: 4_JS_05_kontrola_toka
+    folder: 4_JS_06_kontrola_toka
     guid: 141140d9-00b6-4ca1-8726-237dcdc49531
     description: Контрола тока програма
     activities:
       - type: reading
         title: Гранања у Јава-скрипту
-        file: 05a_js_grananja_citanje.rst
+        file: 06a_js_grananja_citanje.rst
         guid: c8dd6a99-7328-469b-8778-a5e24a10facf
       - type: reading
         title: Употреба гранања у веб странама
-        file: 05b_js_grananja_veb_citanje.rst
+        file: 06b_js_grananja_veb_citanje.rst
         guid: 1bb96271-cd3e-42b2-97f0-72dd2f4b7899
       - type: reading
         title: Петље у Јава-скрипту
-        file: 05c_js_petlje_citanje.rst
+        file: 06c_js_petlje_citanje.rst
         guid: 6f329c1a-3492-4ba5-8480-9ea6155f7caa
       - type: reading
         title: Употреба петљи у веб странама
-        file: 05d_js_petlje_veb_citanje.rst
+        file: 06d_js_petlje_veb_citanje.rst
         guid: 77dbb64a-73ed-46cf-a893-e760ab977e93
+      - type: reading ### tasks?
+        title: Гранања и петље - задаци
+        file: 06f_js_grananja_i_petlje_zadaci.rst
+        guid: ecc57697-17d9-4d5c-9c79-fc00962dd5b2

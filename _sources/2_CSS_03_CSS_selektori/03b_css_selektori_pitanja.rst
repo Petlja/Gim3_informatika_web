@@ -70,27 +70,14 @@ CSS селектори - питања
 
 
 .. mchoice:: selektori_q5
-    :answer_a: <br/>.prva.kolona {background-color:darkgray;}<br/>.druga.kolona {background-color:lightblue;}<br/>.treca.kolona {background-color:lightgreen;}
-    :answer_b: <br/>.kolona {float:left; max-width:180px; padding:10px;}<br/>.prva {background-color:darkgray;}<br/>.druga {background-color:lightblue;}<br/>.treca {background-color:lightgreen;}
-    :answer_c: <br/>.kolona {float:left; max-width:180px; padding:10px;}<br/>.prva kolona {background-color:darkgray;}<br/>.druga kolona {background-color:lightblue;}<br/>.treca kolona {background-color:lightgreen;}
-    :correct: b
+    :answer_a: се налазе у неком елементу класе p и у неком елементу класе h
+    :answer_b: су наслови који имају класу p
+    :answer_c: су параграфи који имају класу h
+    :answer_d: имају класе p и h
+    :correct: d
     :feedback_a: Не.
-    :feedback_b: Тачно!
+    :feedback_b: Не.
     :feedback_c: Не.
+    :feedback_d: Тачно!
 
-    Ово је део *HTML* кôда једне веб стране.
-
-    .. code-block:: html
-
-        <body>
-          <div class="prva kolona"> <h2> HTML </h2> <p> elementi, liste, tabele, hiperveze, multimedija </p> </div>
-          <div class="druga kolona"> <h2> CSS </h2> <p> CSS stilovi, svojstva, selektori, raspored </p> </div>
-          <div class="treca kolona"> <h2> Bootstrap </h2> <p> Biblioteka, klase, komponente, raspored </p> </div>
-        </body>
-
-    Који од понуђених стилова даје изглед у прегледачу као на следећој слици?
-    
-    .. image:: ../../_images/css/selektori_test5.png
-        :width: 600px
-        :align: center
-    
+    Селектор ``.h.p`` издваја све елементе који ...
