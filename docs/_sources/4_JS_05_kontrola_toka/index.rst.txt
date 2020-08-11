@@ -9,3 +9,4 @@
     05b_js_grananja_veb_citanje.rst
     05c_js_petlje_citanje.rst
     05d_js_petlje_veb_citanje.rst
+    05f_js_grananja_i_petlje_zadaci.rst

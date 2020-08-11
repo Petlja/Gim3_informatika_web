@@ -1,6 +1,6 @@
-========================
-Основе језика JavaScript
-========================
+===================
+Променљиве и изрази
+===================
 
 .. toctree:: 
     :maxdepth: 1
@@ -9,5 +9,5 @@
     02b_js_brojevi_citanje.rst
     02c_js_tekstualne_vrednosti_citanje.rst
     02d_js_logicke_vrednosti_citanje.rst
-    02e_js_objekti_citanje.rst
-    042f_js_nizovi_citanje.rst
+    02e_js_osnovni_tipovi_pitanja.rst
+    02f_js_osnovni_tipovi_zadaci.rst

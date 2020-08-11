@@ -32,7 +32,8 @@
     Bootstrap подршка компонентама <3_Bootstrap_03_komponente/index>
     Bootstrap и распоређивање елемената <3_Bootstrap_04_raspored/index>
     Јава скрипт <4_JS_01_izvrsavanje/index>
-    Основе језика JavaScript <4_JS_02_promenljive_i_izrazi/index>
-    Функције, методе, догађаји <4_JS_03_funkcije_metode_dogadjaji/index>
-    Веб интерфејс <4_JS_04_veb_interfejs/index>
-    Контрола тока програма <4_JS_05_kontrola_toka/index>
+    Променљиве и изрази <4_JS_02_promenljive_i_izrazi/index>
+    Сложени типови података <4_JS_03_slozeni_tipovi_podataka/index>
+    Функције, методе, догађаји <4_JS_04_funkcije_metode_dogadjaji/index>
+    Веб интерфејс <4_JS_05_veb_interfejs/index>
+    Контрола тока програма <4_JS_06_kontrola_toka/index>
