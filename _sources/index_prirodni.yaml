@@ -1,6 +1,6 @@
 courseId: kurs-treci-gim-prirodni
 lang: sr-Cyrl
-title: Информатика за трећи разред гимназије
+title: Рачунарство и информатика за трећи разред гимназије - природно-математички смер
 description:
   willLearn: # list
     - Основе језика HTML, CSS, и JavaScript
@@ -13,7 +13,7 @@ description:
 lessons:
 
 ### HTML
-  - title: HTML документи
+  - title: HTML-1 HTML документи
     folder: 1_HTML_01_HTML_dokumenti
     guid: bf449b62-1d2e-4d6e-b8e0-2be6854d962c
     description: HTML документи
@@ -30,7 +30,7 @@ lessons:
         title: Елементи HTML документа - задаци
         file: 01c_elementi_html_zadaci.rst
         guid: f592e6bf-c76b-410d-9255-1105df719530
-  - title: Форматирање текста
+  - title: HTML-2 Форматирање текста
     folder: 1_HTML_02_formatiranje_teksta
     guid: 4a7a9e09-fd2d-4d83-9a45-34f70e3c3225
     description: Форматирање текста
@@ -47,7 +47,7 @@ lessons:
         title: Форматирање текста - задаци
         file: 02c_formatiranje_teksta_zadaci.rst
         guid: 1e189697-a803-4fd8-b9ec-3c76e22e1bf7
-  - title: Листе и табеле
+  - title: HTML-3 Листе и табеле
     folder: 1_HTML_03_liste_i_tabele
     guid: 9cd8a3a8-b9c6-4f37-a38a-34282d2c09b4
     description: Листе и табеле
@@ -76,7 +76,7 @@ lessons:
         title: Табеле - задаци
         file: 03f_tabele_zadaci.rst
         guid: 5097f6b8-7e7c-42b1-a8b1-e7605e2bb46a
-  - title: Повезивање докумената
+  - title: HTML-4 Повезивање докумената
     folder: 1_HTML_04_povezivanje_dokumenata
     guid: e7e928c8-fd6f-4baa-8710-3306ddbef95e
     description: Повезивање докумената
@@ -93,7 +93,7 @@ lessons:
         title: Повезивање докумената - задаци
         file: 04c_povezivanje_dokumenata_zadaci.rst
         guid: 2527d450-422a-4537-8c75-e8b5a15f44ca
-  - title: Мултимедијални садржаји
+  - title: HTML-5 Мултимедијални садржаји
     folder: 1_HTML_05_multimedijalni_sadrzaji
     guid: a7dba7da-f4f5-49fb-b31f-59fc57959307
     description: Мултимедијални садржаји
@@ -112,7 +112,7 @@ lessons:
         guid: 9748c7c6-03c6-4918-9ded-e10d51c494f0
 
 ### CSS
-  - title: CSS стилови
+  - title: CSS-1 CSS стилови
     folder: 2_CSS_01_CSS_stilovi
     guid: c1a4f7ae-8edb-4914-9e7e-63ce2159471c
     description: CSS стилови
@@ -125,7 +125,7 @@ lessons:
         title: CSS стилови - вежбе
         file: 01c_css_stilovi_vezbe.rst
         guid: 9493a4e0-0154-4c00-a46b-e8e439852552
-  - title: CSS својства
+  - title: CSS-2 CSS својства
     folder: 2_CSS_02_CSS_svojstva
     guid: bd513286-0234-4641-90ea-c723ed5dd111
     description: CSS својства
@@ -142,7 +142,7 @@ lessons:
         title: CSS својства - задаци
         file: 02c_css_svojstva_zadaci.rst
         guid: 02f77f91-4eeb-4ab8-bda0-2c4574abcb77
-  - title: CSS селектори
+  - title: CSS-3 CSS селектори
     folder: 2_CSS_03_CSS_selektori
     guid: f7472e25-2f78-4960-b8d7-9882a26ecacd
     description: CSS селектори
@@ -159,7 +159,7 @@ lessons:
         title: CSS селектори - задаци
         file: 03c_css_selektori_zadaci.rst
         guid: 58b7d53e-2d68-4adc-8f06-00125ed4004a
-  - title: Распоред елемената
+  - title: CSS-4 Распоред елемената
     folder: 2_CSS_04_raspored_elemenata
     guid: fe6e37f4-a9ad-473d-859e-ed469a992547
     description: Распоред елемената
@@ -177,73 +177,8 @@ lessons:
         file: 04c_raspored_elemenata_zadaci.rst
         guid: a9b8eeae-71a9-4890-b1ad-323fb27df858
 
-### Bootstrap
-  - title: Bootstrap библиотека
-    folder: 3_Bootstrap_01_biblioteka
-    guid: 9a460451-b2fb-4d94-af3d-fd3605716a1a
-    description: Bootstrap библиотека
-    activities:
-      - type: reading
-        title: Bootstrap библиотека
-        file: 01a_bootstrap_biblioteka_citanje.rst
-        guid: aeb77edc-4597-42c0-87d5-40bca03194ae
-      - type: quiz
-        title: Bootstrap библиотека - питања
-        file: 01b_bootstrap_biblioteka_pitanja.rst
-        guid: 47040b4a-683e-4c3c-8b9b-6fdde40e24b7
-  - title: Bootstrap класе
-    folder: 3_Bootstrap_02_klase
-    guid: 796051c5-3193-42f7-8505-3052b6c622a7
-    description: Bootstrap класе
-    activities:
-      - type: reading
-        title: Bootstrap класе
-        file: 02a_bootstrap_klase_citanje.rst
-        guid: da466efb-0036-41cb-9717-e3f1b105e0db
-      - type: quiz
-        title: Bootstrap класе - питања
-        file: 02b_bootstrap_klase_pitanja.rst
-        guid: b14d7ad4-81f1-45b5-873b-34b66aed6446
-      - type: reading ### zadaci
-        title: Bootstrap класе - задаци
-        file: 02c_bootstrap_klase_zadaci.rst
-        guid: efcea516-370b-422e-a342-93942bd64719
-  - title: Bootstrap подршка компонентама
-    folder: 3_Bootstrap_03_komponente
-    guid: 0089c13a-bd03-474d-9dfe-4ae8cbf48f8b
-    description: Bootstrap компоненте
-    activities:
-      - type: reading
-        title: Bootstrap подршка компонентама
-        file: 03a_bootstrap_komponente_citanje.rst
-        guid: e74d98c2-1bd9-4260-8d62-143bd9ab8aa2
-      - type: quiz
-        title: Bootstrap компоненте - питања
-        file: 03b_bootstrap_komponente_pitanja.rst
-        guid: 45e9e3d8-37fb-4f3b-8926-5e0972422dbd
-      - type: reading ### zadaci
-        title: Bootstrap компоненте - задаци
-        file: 03c_bootstrap_komponente_zadaci.rst
-        guid: 381b9c53-4816-42ec-9023-b61701b8cd66
-  - title: Bootstrap и распоређивање елемената
-    folder: 3_Bootstrap_04_raspored
-    guid: 64d45690-da38-4c43-9e3c-cdab999ec721
-    description: Распоред елемената помоћу *Twitter Bootstrap* библиотеке
-    activities:
-      - type: reading
-        title: Bootstrap и распоређивање елемената
-        file: 04a_bootstrap_raspored_citanje.rst
-        guid: 70238755-9f7f-4ea4-a55e-cad8a4b2e116
-      - type: quiz
-        title: Bootstrap и распоређивање елемената - питања
-        file: 04b_bootstrap_raspored_pitanja.rst
-        guid: aa115c67-261b-4a4a-a30e-bab25124ad66
-      - type: reading ### zadaci
-        title: Bootstrap и распоређивање елемената - задаци
-        file: 04c_bootstrap_raspored_zadaci.rst
-        guid: dbec1597-0a5a-4ecf-9ab9-b4f6f083ab86
 ### JavaScript
-  - title: Јава скрипт
+  - title: JS_1 Јава скрипт
     folder: 4_JS_01_izvrsavanje
     guid: c7ff09ff-6638-4a03-907a-adde7c81da7b
     description: Јава скрипт
@@ -260,7 +195,7 @@ lessons:
         title: Извршавање јава скриптова - питања
         file: 01c_js_izvrsavanje_pitanja.rst
         guid: e625a46c-cd55-49ac-bdc8-0b71d304513c
-  - title: Променљиве и изрази
+  - title: JS_2 Променљиве и изрази
     folder: 4_JS_02_promenljive_i_izrazi
     guid: 7bdd4b79-2836-4163-abbb-3ffe80c0de5e
     description: Променљиве и изрази
@@ -289,7 +224,7 @@ lessons:
         title: Основни типови - задаци
         file: 02f_js_osnovni_tipovi_zadaci.rst
         guid: d5e0f87a-f942-44f0-af83-54b9a34237bf
-  - title: Сложени типови података
+  - title: JS_3 Сложени типови података
     folder: 4_JS_03_slozeni_tipovi_podataka
     guid: 948f7f69-4786-4cda-8b6a-5581f29ce1a1
     description: Сложени типови података
@@ -311,7 +246,7 @@ lessons:
         file: 03d_js_objekti_i_nizovi_zadaci.rst
         guid: 2d95fc6f-9767-455a-ba43-0adfbc2b59b5
 
-  - title: Функције, методе, догађаји
+  - title: JS_4 Функције, методе, догађаји
     folder: 4_JS_04_funkcije_metode_dogadjaji
     guid: 7f56f5bd-5a8d-4eb1-9905-e8cc5ccccbea
     description: Функције, методе, догађаји
@@ -336,7 +271,7 @@ lessons:
         title: Функције, методе, догађаји -  задаци
         file: 04e_js_fmd_zadaci.rst
         guid: 0193180b-89a4-4f89-82e4-17f8c155cc2e
-  - title: Веб интерфејс
+  - title: JS_5 Веб интерфејс
     folder: 4_JS_05_veb_interfejs
     guid: f348bf0f-15fb-4e34-b128-8d5e4d5a9498
     description: Веб интерфејс
@@ -353,10 +288,10 @@ lessons:
         title: Листе за одабир вредности
         file: 05c_js_liste_za_odabir_citanje.rst
         guid: 1898d1d5-5a04-49b7-83d2-f7d17b7db697
-      - type: reading
-        title: Модални дијалози
-        file: 05d_js_modalni_dijalozi_citanje.rst
-        guid: 9c8f5215-689c-4d04-9a81-44b444757173
+#      - type: reading
+#        title: Модални дијалози
+#        file: 05d_js_modalni_dijalozi_citanje.rst
+#        guid: 9c8f5215-689c-4d04-9a81-44b444757173
       - type: quiz
         title: Веб интерфејс - питања
         file: 05e_js_veb_interfejs_pitanja.rst
@@ -365,7 +300,7 @@ lessons:
         title: Веб интерфејс - задаци
         file: 05f_js_veb_interfejs_zadaci.rst
         guid: 2e2f64a1-d7d8-47c8-b7d2-c148d3458224
-  - title: Контрола тока програма
+  - title: JS_6 Контрола тока програма
     folder: 4_JS_06_kontrola_toka
     guid: 141140d9-00b6-4ca1-8726-237dcdc49531
     description: Контрола тока програма

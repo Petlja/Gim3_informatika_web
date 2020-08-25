@@ -136,36 +136,38 @@
 
 Да би употреба ове стране била удобна, недостаје бар још памћење раније унетих ставки и поништавање (прецртавање или брисање или оба) урађених послова. На овај преимер ћемо се вратити и дорадити га касније.
 
-Пример – поље за унос и *Bootstrap* стилови
-'''''''''''''''''''''''''''''''''''''''''''
+.. comment
 
-Уколико користите *Twitter Bootstrap*, имате могућност да лако додатно стилизујете поља за унос података. Помоћу библиотеке *Twitter Bootstrap* можете да окружите ознаку и поље за унос текста блоком који има класу ``form-group`` и у њега ставите елементе ``<label>`` и ``<input>``, без потребе да их одвајате елементом ``<br>``:
+    Пример – поље за унос и *Bootstrap* стилови
+    '''''''''''''''''''''''''''''''''''''''''''
 
-.. activecode:: tb_input_html_js
-    :language: html
-    :nocodelens:
+    Уколико користите *Twitter Bootstrap*, имате могућност да лако додатно стилизујете поља за унос података. Помоћу библиотеке *Twitter Bootstrap* можете да окружите ознаку и поље за унос текста блоком који има класу ``form-group`` и у њега ставите елементе ``<label>`` и ``<input>``, без потребе да их одвајате елементом ``<br>``:
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <title>Страна са укљученом Bootstrap библиотеком</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-    <div class="container-fluid">
-      <div class="form-group">
-         <label for="ime">Име:</label>
-         <input type="text" id="ime" name="ime" class="form-control"/>
-      </div>
-    </div>
-    </body>
-    </html>
+    .. activecode:: tb_input_html_js
+        :language: html
+        :nocodelens:
 
-На поља за унос је потребно поставити класу ``form-control`` како би се применио *Bootstrap* стил. *Bootstrap* има велики број класа којима можете стилизовати оваква поља.
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <title>Страна са укљученом Bootstrap библиотеком</title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+        <div class="container-fluid">
+          <div class="form-group">
+             <label for="ime">Име:</label>
+             <input type="text" id="ime" name="ime" class="form-control"/>
+          </div>
+        </div>
+        </body>
+        </html>
 
-На сајту *W3schools* можете наћи више информација 
-`о стилизовању поља за унос <https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp>`_ помоћу библиотеке *Twitter Bootstrap*.
+    На поља за унос је потребно поставити класу ``form-control`` како би се применио *Bootstrap* стил. *Bootstrap* има велики број класа којима можете стилизовати оваква поља.
+
+    На сајту *W3schools* можете наћи више информација 
+    `о стилизовању поља за унос <https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp>`_ помоћу библиотеке *Twitter Bootstrap*.
 

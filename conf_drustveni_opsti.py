@@ -13,6 +13,7 @@
 
 #import sys
 import os
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -20,7 +21,6 @@ import os
 
 import pkg_resources
 from runestone import runestone_static_dirs, runestone_extensions
-
 import petljadoc
 
 # -- General configuration -----------------------------------------------------
@@ -30,7 +30,6 @@ import petljadoc
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-
 extensions = ['sphinx.ext.mathjax'] + runestone_extensions() + petljadoc.runestone_ext.extensions()
 
 #,'runestone.video','runestone.reveal','runestone.poll','runestone.tabbedStuff','runestone.disqus','runestone.codelens','runestone.activecode', 'runestone.assess', 'runestone.animation','runestone.meta', 'runestone.parsons', 'runestone.blockly', 'runestone.livecode','runestone.accessibility']
@@ -48,12 +47,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Петља - Информатика за трећи разред гимназије'
+project = 'Петља - Рачунарство и информатика за трећи разред гимназије - друштвено-језички и општи смер'
 #pylint: disable=redefined-builtin
 copyright = '2020 Фондација Петља'
-
-
-
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -118,7 +114,7 @@ rst_prolog = (
 
 # -- Options for HTML output ---------------------------------------------------
 
-html_context = {'course_id': 'Информатика за трећи разред гимназије',
+html_context = {'course_id': 'gim3_web_drustveni_i_opsti',
                 'login_required':'false',
                 'appname': "runestone",
                 'loglevel': int("0"),
@@ -127,7 +123,7 @@ html_context = {'course_id': 'Информатика за трећи разре�
                 'python3': 'true',
                 'dburl': os.environ['DBURL'] if 'DBURL' in os.environ else '',
                 'default_ac_lang': 'python',
-                'basecourse': 'Информатика за трећи разред гимназије',
+                'basecourse': 'gim3_web_drustveni_i_opsti',
                 'jobe_server': 'http://jobe2.cosc.canterbury.ac.nz',
                 'proxy_uri_runs': '/jobe/index.php/restapi/runs/',
                 'proxy_uri_files': '/jobe/index.php/restapi/files/',
@@ -146,10 +142,10 @@ html_theme = 'custom_theme'
 #html_theme_options = {'nosidebar': 'true'}
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Петља - Информатика за трећи разред гимназије",
+    'navbar_title': "Петља - Рачунарство и информатика за трећи разред гимназије - друштвено-језички и општи смер",
 
     # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': "Поглавља",
+    'navbar_site_name': "Chapters",
 
     # Global TOC depth for "site" navbar tab. (Default: 1)
     # Switching to -1 shows all levels.
@@ -192,10 +188,10 @@ html_theme_path = ["_templates/plugin_layouts"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Петља - Информатика за трећи разред гимназије'
+html_title = 'Петља - Рачунарство и информатика за трећи разред гимназије - друштвено-језички и општи смер'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title ='Петља - Информатика за трећи разред гимназије'
+html_short_title ='Петља - Рачунарство и информатика за трећи разред гимназије - друштвено-језички и општи смер'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -212,7 +208,7 @@ html_short_title ='Петља - Информатика за трећи разр�
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
-html_static_path = ['_static'] + runestone_static_dirs() + petljadoc.runestone_ext.static_dirs()
+html_static_path = ['_static']  + runestone_static_dirs() + petljadoc.runestone_ext.static_dirs()
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -258,7 +254,7 @@ html_show_sourcelink = False
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Програмирање за први разред - C#-doc'
+htmlhelp_basename = 'gim3_web_drustveni_i_opsti-doc'
 
 # 'accessibility_style' config value is defined in the 'accessibility' extension. 
 # By this config value you can select what accessibility stylesheet
@@ -281,8 +277,4 @@ htmlhelp_basename = 'Програмирање за први разред - C#-do
 #showeval_div_class = 'runestone explainer alert alert-warning'
 #tabbed_div_class = 'alert alert-warning'
 
-
 petljadoc.runestone_ext.config_values_for_components(globals())
-
-
-

@@ -15,37 +15,39 @@
 
 У претходним примерима смо функцији предавали објекат на којем се десио догађај (предат као параметар ``this``), да би функција која ће бити позвана могла лакше да приступи објекту из којег је позвана и да измени или прочита неке информације из тог објекта. У случају дугмади се ретко прослеђује референца на дугме и чешће се позива функција без параметара, или се прослеђује неки стринг или број који само говори функцији шта треба да уради. У овом случају је прослеђен стринг ``prikazi``. 
 
-Случају да користите *Twitter Bootstrap* за стилизовање страна, можете лако да примените различите стилове за дугмад, као на пример:
+.. comment
 
-.. image:: ../../_images/bootstrap/dugmad_stil.png
-    :width: 624px
-    :align: center
+    У случају да користите *Twitter Bootstrap* за стилизовање страна, можете лако да примените различите стилове за дугмад, као на пример:
 
-Примарни и секундарни стилови дугмета су стилови који се најчешће користе на странама. Често би требало да обележите неку дугмад тако да означите да је то дугме које треба да се притисне да би се успешно извршила нека акција (енгл. *success*) или да ће се десити нека потенцијално опасна акција или акција која ће приказати упозорење. 
+    .. image:: ../../_images/bootstrap/dugmad_stil.png
+        :width: 624px
+        :align: center
 
-Дугмад се могу лако стилизовати помоћу библиотеке *Twitter Bootstrap* додавањем класа ``btn-primary``, ``btn-secondary``, ``btn-success``, ``btn-danger`` и слично као што је приказано у следећем примеру:
+    Примарни и секундарни стилови дугмета су стилови који се најчешће користе на странама. Често би требало да обележите неку дугмад тако да означите да је то дугме које треба да се притисне да би се успешно извршила нека акција (енгл. *success*) или да ће се десити нека потенцијално опасна акција или акција која ће приказати упозорење. 
 
-.. code-block:: html
+    Дугмад се могу лако стилизовати помоћу библиотеке *Twitter Bootstrap* додавањем класа ``btn-primary``, ``btn-secondary``, ``btn-success``, ``btn-danger`` и слично као што је приказано у следећем примеру:
 
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-link">Link</button>
+    .. code-block:: html
 
-Када поставите неко од оваквих дугмади на страну, на њега можете поставити функцију која ће бити извршена када се притисне дугме, као на пример:
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-link">Link</button>
 
-.. code-block:: html
+    Када поставите неко од оваквих дугмади на страну, на њега можете поставити функцију која ће бити извршена када се притисне дугме, као на пример:
 
-    <button type="button" class="btn btn-primary" onclick="mojaFunkcija()">Притисни ово дугме</button>
+    .. code-block:: html
 
-Више информација о дугмади можете наћи на 
-*w3schools* страни `о дугметима <https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp>`_ или 
-*Bootstrap* `документацији о дугметима <https://getbootstrap.com/docs/4.1/components/buttons/>`_.
+        <button type="button" class="btn btn-primary" onclick="mojaFunkcija()">Притисни ово дугме</button>
+
+    Више информација о дугмади можете наћи на 
+    *w3schools* страни `о дугметима <https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp>`_ или 
+    *Bootstrap* `документацији о дугметима <https://getbootstrap.com/docs/4.1/components/buttons/>`_.
 
 Пример – вишејезична страна
 '''''''''''''''''''''''''''
