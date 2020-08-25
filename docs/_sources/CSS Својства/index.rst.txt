@@ -1,8 +1,0 @@
-============
-CSS својства
-============
-
-.. toctree:: 
-    :maxdepth: 1
-
-    02a_css_svojstva_citanje.rst
