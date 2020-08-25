@@ -1,0 +1,10 @@
+==================
+WP-2 Теме и додаци
+==================
+
+.. toctree:: 
+    :maxdepth: 1
+
+    02a_addons_citanje.rst
+    02b_addons_pitanja.rst
+    02c_addons_zadaci.rst

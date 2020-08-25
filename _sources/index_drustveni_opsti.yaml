@@ -3,14 +3,68 @@ lang: sr-Cyrl
 title: Рачунарство и информатика за трећи разред гимназије - друштвено-језички и општи смер
 description:
   willLearn: # list
-    - Основе језика HTML, CSS, и JavaScript
+    - Креирање веб страна помоћу готових веб решења, тј. система за управљање садржајем
+    - Основе језика HTML и CSS
   requirements:
     - Рачунар са савременим прегледачем (браузером)
   toc:
+    - WordPress
     - HTML
     - CSS
-    - JavaScript
 lessons:
+
+### WordPress
+  - title: WP-1 WordPress - основе
+    folder: 0_WP_01_dashboard
+    guid: 1b3b994c-d484-46cc-b256-f3f9908591a2
+    description: WordPress - основе
+    activities:
+      - type: reading
+        title: Шта је WordPress
+        file: 01a_wordpress_citanje.rst
+        guid: aa570850-8084-4856-8d2e-af90c052b3cb
+      - type: reading
+        title: Командна табла
+        file: 01b_dashboard_citanje.rst
+        guid: 56987b1e-58ec-4c73-8d35-cb2bf2453240
+      - type: quiz
+        title: Командна табла - питања
+        file: 01c_dashboard_pitanja.rst
+        guid: 554c56c0-03f4-476b-bd70-bf58cb490bc1
+  - title: WP-2 Теме и додаци
+    folder: 0_WP_02_addons
+    guid: 5b71c2c1-9529-4133-8211-20032bf3cfe9
+    description: Теме и додаци
+    activities:
+      - type: reading
+        title: Теме и додаци
+        file: 02a_addons_citanje.rst
+        guid: e1debbc1-a0b0-470c-8d3e-19c35fb06fa0
+      - type: quiz
+        title: Теме и додаци - питања
+        file: 02b_addons_pitanja.rst
+        guid: f57924de-ec58-4fa1-b285-545b878127c2
+      - type: reading ### tasks?
+        title: Теме и додаци - задаци
+        file: 02c_addons_zadaci.rst
+        guid: a8a26d0a-3dab-4e4a-a8b4-1f55cf639d3b
+  - title: WP-3 Додавање садржаја
+    folder: 0_WP_03_sadrzaj
+    guid: 0090242e-fb66-4286-9305-52dea82bafe0
+    description: Додавање садржаја
+    activities:
+      - type: reading
+        title: Додавање садржаја
+        file: 03a_sadrzaj_citanje.rst
+        guid: d79f3878-412c-446e-9011-6c5ecae55405
+      - type: quiz
+        title: Додавање садржаја - питања
+        file: 03b_sadrzaj_pitanja.rst
+        guid: c08c0e60-cb71-4125-9467-f3670a362027
+      - type: reading ### tasks?
+        title: Додавање садржаја - задаци
+        file: 03c_sadrzaj_zadaci.rst
+        guid: 02035d8e-6004-4b86-8cba-c386d8b2199c
 
 ### HTML
   - title: HTML-1 HTML документи
