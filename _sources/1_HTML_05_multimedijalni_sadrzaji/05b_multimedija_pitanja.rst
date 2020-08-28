@@ -35,7 +35,12 @@
 
     Шта треба да пише на црти у следећој дефиницији елемента ``video`` (уписати само име атрибута)?
 
-    **<video _______ ="putanja do video fajla"> ... </video>**
+    .. code::
+
+        <video controls>
+            <source _______="putanja do video fajla" type="video/mp4" />
+            Ваш прегледач не може да прикаже видео.
+        </video>
 
     - :^src$: Тачан одговор!
       :.*: Покушај поново.
