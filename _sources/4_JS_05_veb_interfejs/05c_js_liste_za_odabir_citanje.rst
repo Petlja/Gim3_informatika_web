@@ -73,42 +73,22 @@
 
 Направите веб страну са листом за избор боје, слично претходном примеру. Додајте функцију која ће прочитати тренутно одабрану вредност и поставити боју позадине на пасус.
 
-Twitter Bootstrap листе
------------------------
+.. comment
 
-*Twitter Bootstrap* стилови вам омогућавају да ваша листа буде лепше стилизована уз практично исту количину кода.
+    Twitter Bootstrap листе
+    -----------------------
 
-.. image:: ../../_images/js/bootstrap_lista.png
-    :width: 500px
-    :align: center
+    *Twitter Bootstrap* стилови вам омогућавају да ваша листа буде лепше стилизована уз практично исту количину кода.
 
-*HTML* кôд којим се креира оваква листа је приказан у следећем примеру.
+    .. image:: ../../_images/js/bootstrap_lista.png
+        :width: 500px
+        :align: center
 
-.. code-block:: html
+    *HTML* кôд којим се креира оваква листа је приказан у следећем примеру.
 
-    <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="border" data-toggle="dropdown">
-        Одаберите стил ивице:
-    </button>
-    <div class="dropdown-menu">
-        <button class="dropdown-item" onclick="postavi('solid')">Пуна</button>
-        <button class="dropdown-item" onclick="postavi('solid')">Пуна</button>
-        <button class="dropdown-item" onclick="postavi('dashed')">Испрекидана</button>
-        <button class="dropdown-item" onclick="postavi('dotted')">Тачкаста</button>
-        <div class="dropdown-divider"></div>
-        <button class="dropdown-item" onclick="postavi('double')">Двострука</button>
-    </div>
-    </div>
+    .. code-block:: html
 
-Листа се ставља у ``<div>`` елемент који има класу ``dropdown``. Унутар овог елемента се налази једно дугме са класом ``dropdown-toggle`` на које се може кликнути како би се приказале остале опције. Унутар овог дугмета је и текст који ће бити приказан док опције нису приказане. Листа нема опције као у случају класичне *HTML* листе. Уместо тога, ова листа садржи ``<div>`` блок са класом ``dropdown-menu`` у коме се налази скуп дугмади која ће бити приказана као ставке листе. Овакво дугме мора да има класу ``dropdown-item`` и у његовом атрибуту ``onclick`` се може позвати нека функција која ће се извршити када се одабере нека ставка (као и у случају стандардне дугмади). У овом случају, при избору било које од ставки позива се *JavaScript* функција ``postavi``, којој се као параметар прослеђује одговарајућа вредност врсте ивице.
-
-Поред дугмади, као ставке се могу користити и линкови (елементи ``<а>``), а у случају да се као нека ставка стави ``<div>`` блок са класом ``dropdown-divider``, на његовом месту ће се поставити линија која дели ставке. Постоји још много начина на које можете стилизовати ставке листе. На пример, можете да дефинишете да се опције приказују увек са леве или десне стране. Више информација о могућностима стилизовања листа можете наћи у *bootstrap* документацији о 
-`листама за избор <https://getbootstrap.com/docs/4.5/components/dropdowns/>`_ .
-
-Функција која би реаговала на ове догађаје изгледа као функција у следећем примеру:
-
-.. code-block:: javascript
-
+POCETAK
     function postavi(vrstaIvice) {
         let omot = document.querySelector(`div#омот`);
         omot.style.border = vrstaIvice;
@@ -141,6 +121,9 @@ Twitter Bootstrap листе
     <h2>Пример употребе Bootstrap листе</h2>
       <div id="омот">
         <p id="opis">Одаберите један од понуђених елемената из листе:</p>
+
+KRAJ
+
         <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="border" data-toggle="dropdown">
             Одаберите стил ивице:
@@ -154,8 +137,63 @@ Twitter Bootstrap листе
             <button class="dropdown-item" onclick="postavi('double')">Двострука</button>
         </div>
         </div>
-      </div>
-    </div>
-    </body>
-    </html>
-    
+
+    Листа се ставља у ``<div>`` елемент који има класу ``dropdown``. Унутар овог елемента се налази једно дугме са класом ``dropdown-toggle`` на које се може кликнути како би се приказале остале опције. Унутар овог дугмета је и текст који ће бити приказан док опције нису приказане. Листа нема опције као у случају класичне *HTML* листе. Уместо тога, ова листа садржи ``<div>`` блок са класом ``dropdown-menu`` у коме се налази скуп дугмади која ће бити приказана као ставке листе. Овакво дугме мора да има класу ``dropdown-item`` и у његовом атрибуту ``onclick`` се може позвати нека функција која ће се извршити када се одабере нека ставка (као и у случају стандардне дугмади). У овом случају, при избору било које од ставки позива се *JavaScript* функција ``postavi``, којој се као параметар прослеђује одговарајућа вредност врсте ивице.
+
+    Поред дугмади, као ставке се могу користити и линкови (елементи ``<а>``), а у случају да се као нека ставка стави ``<div>`` блок са класом ``dropdown-divider``, на његовом месту ће се поставити линија која дели ставке. Постоји још много начина на које можете стилизовати ставке листе. На пример, можете да дефинишете да се опције приказују увек са леве или десне стране. Више информација о могућностима стилизовања листа можете наћи у *bootstrap* документацији о 
+    `листама за избор <https://getbootstrap.com/docs/4.5/components/dropdowns/>`_ .
+
+    Функција која би реаговала на ове догађаје изгледа као функција у следећем примеру:
+
+    .. code-block:: javascript
+
+        function postavi(vrstaIvice) {
+            let omot = document.querySelector(`div#омот`);
+            omot.style.border = vrstaIvice;
+        }
+
+    За разлику од претходног случаја у коме је функција реаговала када је одабрана нека ставка па смо морали да нађемо која је тачно ставка одабрана, у овом случају нам је одабрана ставка већ прослеђена као параметар. Све што треба да урадимо је да омоту променимо стил ивица.
+
+    Следи комплетан кôд примера:
+
+    .. activecode:: izbor_okvira_iz_bootstrap_liste
+        :language: html
+        :nocodelens:
+
+        <!DOCTYPE html>
+        <head>
+        <title>Избор из Bootstrap листе</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script>
+                function postavi(vrstaIvice) {
+                    let omot = document.querySelector(`div#омот`);
+                    omot.style.border = vrstaIvice;
+                }
+            </script>
+        </head>
+        <body>
+        <div class="container-fluid">
+        <h2>Пример употребе Bootstrap листе</h2>
+          <div id="омот">
+            <p id="opis">Одаберите један од понуђених елемената из листе:</p>
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="border" data-toggle="dropdown">
+                Одаберите стил ивице:
+            </button>
+            <div class="dropdown-menu">
+                <button class="dropdown-item" onclick="postavi('solid')">Пуна</button>
+                <button class="dropdown-item" onclick="postavi('solid')">Пуна</button>
+                <button class="dropdown-item" onclick="postavi('dashed')">Испрекидана</button>
+                <button class="dropdown-item" onclick="postavi('dotted')">Тачкаста</button>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item" onclick="postavi('double')">Двострука</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        </body>
+        </html>
+        
