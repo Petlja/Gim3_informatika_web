@@ -19,7 +19,7 @@
 .. mchoice:: tabele_q2
     :answer_a: Једну ћелију тела табеле
     :answer_b: Један ред табеле
-    :answer_c: Једну колону таеле
+    :answer_c: Једну колону табеле
     :answer_d: Једну ћелију заглавља табеле
     :correct: a
     :feedback_a: Тачно!

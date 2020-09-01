@@ -67,9 +67,9 @@
 
 
 .. mchoice:: fun_met_dog_q5
-    :answer_a: на сваких 10 секункди
+    :answer_a: на сваких 10 секунди
     :answer_b: 10 пута у секунди
-    :answer_c: на сваких 10 милисекункди
+    :answer_c: на сваких 10 милисекунди
     :answer_d: само једном, након 10 милисекунди
     :correct: c
     :feedback_a: Не.
