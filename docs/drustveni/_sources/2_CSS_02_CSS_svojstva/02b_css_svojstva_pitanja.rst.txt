@@ -78,7 +78,7 @@ CSS својства - питања
 
 .. comment
 
-    mterijal za pitanja i primere:
+    mаterijal za pitanja i primere:
 
     јединице, боје
 
