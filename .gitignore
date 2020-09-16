@@ -2,3 +2,6 @@ __pycache__
 _intermediate
 _build
 build
+conf.py
+pavement.py
+index.yaml
