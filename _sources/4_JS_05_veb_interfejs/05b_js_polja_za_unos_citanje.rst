@@ -51,10 +51,10 @@
       <head>
       <script>
         function prikaz() {
-            let ime = document.querySelector(`#ime`).value;
-            let prezime = document.querySelector(`#prezime`).value;
-            let ocena = document.querySelector(`#ocena`).value;
-            let datum = document.querySelector(`#datum`).value;
+            let ime = document.querySelector('#ime').value;
+            let prezime = document.querySelector('#prezime').value;
+            let ocena = document.querySelector('#ocena').value;
+            let datum = document.querySelector('#datum').value;
             alert(`${ime} ${prezime} је дана ${datum} добио оцену ${ocena}`);
         }
       </script>
@@ -93,8 +93,8 @@
       <head>
       <script>
         function unesi() {
-            let stavka = document.querySelector(`#stavka`);
-            let datum = document.querySelector(`#datum`);
+            let stavka = document.querySelector('#stavka');
+            let datum = document.querySelector('#datum');
 
             let tabela = document.getElementById('tabela').getElementsByTagName('tbody')[0];
             let noviRed = tabela.insertRow(tabela.rows.length);

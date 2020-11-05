@@ -11,7 +11,7 @@
 
 .. code-block:: html
 
-    <button type="button" onclick="mojaFunkcija(`prikazi`)" >Кликни на ово дугме</button>
+    <button type="button" onclick="mojaFunkcija('prikazi')" >Кликни на ово дугме</button>
 
 У претходним примерима смо функцији предавали објекат на којем се десио догађај (предат као параметар ``this``), да би функција која ће бити позвана могла лакше да приступи објекту из којег је позвана и да измени или прочита неке информације из тог објекта. У случају дугмади се ретко прослеђује референца на дугме, а чешће се позива функција без параметара или се прослеђује неки стринг или број који само говори функцији шта треба да уради. У овом случају је прослеђен стринг ``prikazi``. 
 
@@ -71,9 +71,9 @@
             <script>
             
                 function postaviPismo(izabranoPismo) {
-                  document.querySelector(`#cirilica`).classList.add('nevidljiv');
-                  document.querySelector(`#latinica`).classList.add('nevidljiv');
-                  document.querySelector(`#english`).classList.add('nevidljiv');
+                  document.querySelector('#cirilica').classList.add('nevidljiv');
+                  document.querySelector('#latinica').classList.add('nevidljiv');
+                  document.querySelector('#english').classList.add('nevidljiv');
                   
                   document.querySelector(`#${izabranoPismo}`).classList.remove('nevidljiv');
                 }

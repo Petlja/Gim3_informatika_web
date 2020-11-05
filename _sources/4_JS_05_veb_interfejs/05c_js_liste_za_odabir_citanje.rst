@@ -39,8 +39,8 @@
             <script>
 
                 function izabranOkvir() {
-                    let vrstaOkvira = document.querySelector(`#оквир`).value;
-                    let omot = document.querySelector(`#омот`);
+                    let vrstaOkvira = document.querySelector('#оквир').value;
+                    let omot = document.querySelector('#омот');
                     omot.style.border = vrstaOkvira;
                 }
                 
@@ -112,7 +112,7 @@
     .. code-block:: javascript
 
         function postavi(vrstaIvice) {
-            let omot = document.querySelector(`div#омот`);
+            let omot = document.querySelector('div#омот');
             omot.style.border = vrstaIvice;
         }
 
@@ -133,7 +133,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
             <script>
                 function postavi(vrstaIvice) {
-                    let omot = document.querySelector(`div#омот`);
+                    let omot = document.querySelector('div#омот');
                     omot.style.border = vrstaIvice;
                 }
             </script>

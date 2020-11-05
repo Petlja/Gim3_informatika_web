@@ -88,7 +88,7 @@
 .. code-block:: javascript
 
     function sacuvaj() {
-        let podatak = document.querySelector(`#MojModalniDijalog input`).value;
+        let podatak = document.querySelector('#MojModalniDijalog input').value;
         alert(podatak);
          $('#MojModalniDijalog').modal('hide')
     }
