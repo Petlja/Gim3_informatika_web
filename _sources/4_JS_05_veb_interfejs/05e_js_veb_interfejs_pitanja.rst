@@ -2,17 +2,17 @@
 ======================
 
 .. mchoice:: gui_q1
-    :answer_a: атрибут 'onclick'
-    :answer_b: атрибут 'type'
+    :answer_a: метода <i>document.addEventListener</i> објекта тог дугмета
+    :answer_b: атрибут 'type' дугмета
     :answer_c: друго дугме
-    :answer_d: метод 'document.addEventListener'
+    :answer_d: атрибут 'id' дугмета
     :correct: a
     :feedback_a: Тачно!
     :feedback_b: Не.
     :feedback_c: Не.
     :feedback_d: Не.
 
-    За повезивање дугмета са догађајем, најчешће се користи ...
+    За повезивање клика на дугме са функцијом, користи се ...
 
 
 

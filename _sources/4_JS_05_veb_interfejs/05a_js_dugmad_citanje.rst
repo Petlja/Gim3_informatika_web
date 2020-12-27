@@ -11,9 +11,19 @@
 
 .. code-block:: html
 
-    <button type="button" onclick="mojaFunkcija('prikazi')" >Кликни на ово дугме</button>
+    <button type="button" id="dugme1">Кликни на ово дугме</button>
 
-У претходним примерима смо функцији предавали објекат на којем се десио догађај (предат као параметар ``this``), да би функција која ће бити позвана могла лакше да приступи објекту из којег је позвана и да измени или прочита неке информације из тог објекта. У случају дугмади се ретко прослеђује референца на дугме, а чешће се позива функција без параметара или се прослеђује неки стринг или број који само говори функцији шта треба да уради. У овом случају је прослеђен стринг ``prikazi``. 
+    ...
+    
+    <script>
+        document.getElementById("dugme1").addEventListener('click', function(dogadjaj) {
+            // telo anonimne funkcije
+        });
+    </script>
+
+Као и код других догађаја и других *HTML* елемената, и овде је могуће као други аргумент поставити само име функције, или уметнути анонимну функцију, као што је овде учињено.
+
+Функција (било анонимна или именована) и даље има приступ свим информацијама о догађају, а тиме и о *HTML* елементу на којем се десио догађај. Међутим, у случају дугмади се такве информације знатно ређе користе.
 
 .. comment
 
@@ -68,27 +78,11 @@
             </style>
 
             <title>MultiLang</title>
-            <script>
-            
-                function postaviPismo(izabranoPismo) {
-                  document.querySelector('#cirilica').classList.add('nevidljiv');
-                  document.querySelector('#latinica').classList.add('nevidljiv');
-                  document.querySelector('#english').classList.add('nevidljiv');
-                  
-                  document.querySelector(`#${izabranoPismo}`).classList.remove('nevidljiv');
-                }
-
-                document.addEventListener('DOMContentLoaded', function() {
-                    postaviPismo('cirilica');
-                });
-
-            </script>
-
         </head>
         <body>
-            <button type="button" onclick="postaviPismo('cirilica')">Ћирилица</button>
-            <button type="button" onclick="postaviPismo('latinica')">Latinica</button>
-            <button type="button" onclick="postaviPismo('english')">English</button>
+            <button type="button" id="cir">Ћирилица</button>
+            <button type="button" id="lat">Latinica</button>
+            <button type="button" id="eng">English</button>
             <div id="cirilica">
               <h1>Биографија</h1>
               <p>…</p>
@@ -114,6 +108,28 @@
               <p>…</p>
             </div>
         </body>
+        <script>
+        
+            function postaviPismo(izabranoPismo) {
+              document.querySelector('#cirilica').classList.add('nevidljiv');
+              document.querySelector('#latinica').classList.add('nevidljiv');
+              document.querySelector('#english').classList.add('nevidljiv');
+              
+              document.querySelector(`#${izabranoPismo}`).classList.remove('nevidljiv');
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                postaviPismo('cirilica');
+            });
+
+            document.getElementById('cir').addEventListener('click', function(d) {
+                postaviPismo('cirilica');
+            });
+            document.getElementById('lat').addEventListener('click', function(d) {
+                postaviPismo('latinica');
+            });
+            document.getElementById('eng').addEventListener('click', function(d) {
+                postaviPismo('english');
+            });
+        </script>
     </html>
-
-

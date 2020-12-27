@@ -73,9 +73,9 @@
         </div>
 
         <div style="text-align:center">
-          <span class="tacka" onclick="prikaziSlajd(0, true)"></span> 
-          <span class="tacka" onclick="prikaziSlajd(1, true)"></span> 
-          <span class="tacka" onclick="prikaziSlajd(2, true)"></span> 
+          <span class="tacka" id="t0"></span> 
+          <span class="tacka" id="t1"></span> 
+          <span class="tacka" id="t2"></span> 
         </div>
 
         <script>
@@ -116,6 +116,17 @@
 
             prikaziSlajd(0, false);
             let tajmer = setInterval(sledeciSlajd, 1500);
+
+            document.getElementById('t0').addEventListener('click', function(dogadjaj) {
+                prikaziSlajd(0, true);
+            });
+            document.getElementById('t1').addEventListener('click', function(dogadjaj) {
+                prikaziSlajd(1, true);
+            });
+            document.getElementById('t2').addEventListener('click', function(dogadjaj) {
+                prikaziSlajd(2, true);
+            });
+
         </script>
       </body>
     </html> 
@@ -280,7 +291,7 @@
           <input type="date" id="datum" required><br>
           
           <br>
-          <button type="button" onclick="posalji()">Унеси</button>
+          <button type="button" id="dugme_ok">Унеси</button>
         <form>
         <br><br><br><br><br>
         <table id="tabela" border="solid 1px">
@@ -343,7 +354,10 @@
                     rokovi = [];
                 }
             }
+            
             popuni();
+            document.getElementById('dugme_ok').addEventListener('click', posalji);
+
         </script>
       </body>
     </html>

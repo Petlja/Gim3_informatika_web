@@ -3,7 +3,7 @@
 
 У претходним лекцијама смо видели како могу да се унесу подаци помоћу *JavaScript* функције ``prompt`` којом можете да унесете једну вредност путем дијалога. *HTML* језик омогућава да у веб страну поставимо разне *HTML* елементе за прихватање података. Најопштији и вероватно најчешће коришћени елемент је поље за унос, које се обележава тагом ``<input>``.
 
-Елемент ``<input>`` омогућава да се у њега унесе неки податак као што је текст, датум, број и слично. Сваки елемент ``<input>`` има атрибут ``type`` који описује какав податак у њега може да се унесе (нпр. ``text``, ``date``, ``number``). Неки типови поља за унос имају додатне атрибуте, помоћу којих се може додатно ограничити вредност улазног податка коју је могуће унети. На пример, поље за унос бројева нам омогућава да дефинишемо минималну и максималу вредност која се може унети у њега. Поред атрибута ``type`` елемент ``<input>`` има и атрибут ``id`` како би му се лакше приступало помоћу *JavaScript* кода.
+Елемент ``<input>`` омогућава да се у њега унесе неки податак као што је текст, датум, број и слично. Сваки елемент ``<input>`` има атрибут ``type`` који описује какав податак у њега може да се унесе (нпр. ``text``, ``date``, ``number``). Неки типови поља за унос имају додатне атрибуте, помоћу којих се може додатно ограничити вредност улазног податка коју је могуће унети. На пример, поље за унос бројева нам омогућава да дефинишемо минималну и максималу вредност која се може унети у њега. Поред атрибута ``type``, елемент ``<input>`` обично има и атрибут ``id``, како би му се лакше приступало помоћу *JavaScript* кода.
 
 Елемент ``<label>`` представља текст који описује шта треба унети у поље за унос. Елементи овог типа имају атрибут ``for``, који садржи вредност имена (атрибут ``name`` у пољу за унос) поља за унос на ког се односи. Овај елемент није само текст. Када кликнете на овај елемент, фокус ће се поставити на поље за које је везан, тако да можете да почнете да уносите податак.
 
@@ -38,7 +38,7 @@
 
 Као што можете да приметите, језик *HTML* нам омогућава да направимо и сложеније корисничке интерфејсе постављајући различите елементе за унос података. О овим елементима можете научити више на страни `типови улазних поља <https://www.w3schools.com/html/html_form_input_types.asp>`_ сајта *w3schools*. Поред једноставних поља за унос текста, можете да користите поља за потврду (енгл. *checkbox*), радио дугмад, вишелинијске текстове (енгл. *text area*) и слично.
 
-Пошто сви елементи имају свој идентификатор, можемо их у програму лоцирати помоћу методе ``querySelector``, која ће вратити *JavaScript* објекат који представља то поље за унос. Враћени објекти имају поље ``value`` које садржи вредност која је унета у поље за унос текста.
+Пошто сви елементи имају свој идентификатор, можемо их у програму лоцирати помоћу методе ``querySelector`` (или ``getElementById``), која ће вратити *JavaScript* објекат који представља то поље за унос. Враћени објекти имају поље ``value`` које садржи вредност која је унета у поље за унос текста.
 
 Претходни пример можемо да допунимо једним дугметом и следећим *JavaScript* кôдом, тако да се кликом на дугме испусују сви унети подаци. Функција ``prikaz`` проналази поља за унос, чита им вредности и приказује поруку да је ученик добио оцену датог дана.
 
@@ -49,16 +49,6 @@
     <!DOCTYPE html>
     <html>
       <head>
-      <script>
-        function prikaz() {
-            let ime = document.querySelector('#ime').value;
-            let prezime = document.querySelector('#prezime').value;
-            let ocena = document.querySelector('#ocena').value;
-            let datum = document.querySelector('#datum').value;
-            alert(`${ime} ${prezime} је дана ${datum} добио оцену ${ocena}`);
-        }
-      </script>
-
       </head>
       <body>
         <label for="ime">Име:</label><br>
@@ -74,8 +64,23 @@
         <input type="date" id="datum" name="datum"><br>
         
         <br>
-        <button onclick="prikaz()">Потврди</button>
+        <button id="dugme_ok">Потврди</button>
       </body>
+
+      <script>
+
+        function prikaz() {
+            let ime = document.querySelector('#ime').value;
+            let prezime = document.querySelector('#prezime').value;
+            let ocena = document.querySelector('#ocena').value;
+            let datum = document.querySelector('#datum').value;
+            alert(`${ime} ${prezime} је дана ${datum} добио-добила оцену ${ocena}`);
+        }
+
+        document.getElementById("dugme_ok").addEventListener('click', prikaz);
+
+      </script>
+
     </html>
 
 
@@ -91,6 +96,30 @@
     <!DOCTYPE html>
     <html>
       <head>
+
+      </head>
+      <body>
+          <label for="stavka">Шта желиш да урадиш:</label><br>
+          <input type="text" id="stavka" required><br>
+          
+          <label for="datum">Рок:</label><br>
+          <input type="date" id="datum" required><br>
+          
+          <br>
+          <button id="dugme_ok">Унеси</button>
+        <br><br><br><br><br>
+        <table id="tabela" border="solid 1px">
+          <caption>Послови</caption>
+          <thead>
+            <tr>
+              <th>Шта</th>
+              <th>До кад</th>
+            </tr>
+          </thead>
+          <tbody>            
+          </tbody>            
+        </table>
+      </body>
       <script>
         function unesi() {
             let stavka = document.querySelector('#stavka');
@@ -107,31 +136,10 @@
             tekst  = document.createTextNode(datum.value);
             novaCelija.appendChild(tekst);
         }
-      </script>
+        
+        document.getElementById("dugme_ok").addEventListener('click', unesi);
 
-      </head>
-      <body>
-          <label for="stavka">Шта желиш да урадиш:</label><br>
-          <input type="text" id="stavka" required><br>
-          
-          <label for="datum">Рок:</label><br>
-          <input type="date" id="datum" required><br>
-          
-          <br>
-          <button onclick="unesi()">Унеси</button>
-        <br><br><br><br><br>
-        <table id="tabela" border="solid 1px">
-          <caption>Послови</caption>
-          <thead>
-            <tr>
-              <th>Шта</th>
-              <th>До кад</th>
-            </tr>
-          </thead>
-          <tbody>            
-          </tbody>            
-        </table>
-      </body>
+      </script>
     </html>
 
 Да би употреба ове стране била удобна, недостаје бар још памћење раније унетих ставки и поништавање (прецртавање или брисање или оба) урађених послова. На овај пример ћемо се вратити и дорадити га касније.

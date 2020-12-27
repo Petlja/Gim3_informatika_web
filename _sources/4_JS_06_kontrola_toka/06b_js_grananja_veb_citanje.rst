@@ -64,7 +64,11 @@
 
 .. code-block:: html
 
-    <button type="button" onclick="posalji()">Унеси</button>
+    <button type="button" id="dugme_ok">Унеси</button>
+    
+    ...
+    
+    document.getElementById('dugme_ok').addEventListener('click', posalji);
 
 Овде смо додали и атрибут ``type="button"``, зато што је за дугме у формулару подразумевани тип ``submit``. Улога таквог дугмета је да податке из формулара проследи на обраду неком другом фајлу, који може да буде и на другом рачунару и оно се понаша нешто другачије. У нашем примеру податке не шаљемо никуда, па нам је потребна функционалност обичног дугмета. Дакле, тип ``button`` постављамо да бисмо добили "обично дугме".
 
@@ -96,6 +100,31 @@
         input:invalid { border: 2px dashed red; }
         input:valid { border: 2px solid black; }
       </style>
+      </head>
+      <body>
+        <form>
+          <label for="stavka">Шта желиш да урадиш:</label><br>
+          <input type="text" id="stavka" required><br>
+          
+          <label for="datum">Рок:</label><br>
+          <input type="date" id="datum" required><br>
+          
+          <br>
+          <button type="button" id="dugme_ok">Унеси</button>
+        <form>
+        <br><br><br><br><br>
+        <table id="tabela" border="solid 1px">
+          <caption>Послови</caption>
+          <thead>
+            <tr>
+              <th>Шта</th>
+              <th>До кад</th>
+            </tr>
+          </thead>
+          <tbody>            
+          </tbody>            
+        </table>
+      </body>
       <script>
         function posalji() {
             let stavka = document.querySelector(`#stavka`);
@@ -116,33 +145,10 @@
             }
             return false;
         }
-      </script>
+        
+        document.getElementById('dugme_ok').addEventListener('click', posalji);
 
-      </head>
-      <body>
-        <form>
-          <label for="stavka">Шта желиш да урадиш:</label><br>
-          <input type="text" id="stavka" required><br>
-          
-          <label for="datum">Рок:</label><br>
-          <input type="date" id="datum" required><br>
-          
-          <br>
-          <button type="button" onclick="posalji()">Унеси</button>
-        <form>
-        <br><br><br><br><br>
-        <table id="tabela" border="solid 1px">
-          <caption>Послови</caption>
-          <thead>
-            <tr>
-              <th>Шта</th>
-              <th>До кад</th>
-            </tr>
-          </thead>
-          <tbody>            
-          </tbody>            
-        </table>
-      </body>
+      </script>
     </html>
 
 
@@ -164,6 +170,12 @@
     <html lang="sr">
         <head>
             <title>Штоперица</title>
+        </head>
+        <body>
+            <h1>0</h1>
+            <button id="start_stop">Старт</button>
+            <button id="reset">Ресет</button>
+        </body>
             <script>
 
                 let counter = 0;
@@ -174,44 +186,34 @@
                     document.querySelector('h1').innerHTML = counter.toFixed(2);
                 }
 
-                document.addEventListener('DOMContentLoaded', function() {
-                    document.querySelector('#reset').onclick = function() {
-                        counter = 0;
-                        delta = 0;
-                    } 
-                    
-                    document.querySelector('#start_stop').onclick = function() {
-                        if (this.innerHTML == "Старт") {
-                            delta = 0.01;
-                            this.innerHTML = "Стоп";
-                            this.style.backgroundColor = "red";
-                            this.style.color = "black";
-                            document.querySelector('#reset').disabled = true;
-                        }
-                        else if (this.innerHTML == "Стоп") {
-                            delta = 0;
-                            this.innerHTML = "Старт";
-                            this.style.backgroundColor = "green";
-                            this.style.color = "white";
-                            document.querySelector('#reset').disabled = false;
-                        }
-                    
-                    }
-                    
-                    document.querySelector('#start_stop').style.backgroundColor = "green";
-                    document.querySelector('#start_stop').style.color = "white";
-                    setInterval(tik, 10);
+                document.getElementById('reset').addEventListener('click', function(dogadjaj) {
+                    counter = 0;
+                    delta = 0;
                 });
 
-            </script>
-        </head>
-        <body>
-            <h1>0</h1>
-            <button id="start_stop">Старт</button>
-            <button id="reset">Ресет</button>
-        </body>
-    </html>
+                document.getElementById('start_stop').addEventListener('click', function(dogadjaj) {
+                    if (this.innerHTML == "Старт") {
+                        delta = 0.01;
+                        this.innerHTML = "Стоп";
+                        this.style.backgroundColor = "red";
+                        this.style.color = "black";
+                        document.querySelector('#reset').disabled = true;
+                    }
+                    else if (this.innerHTML == "Стоп") {
+                        delta = 0;
+                        this.innerHTML = "Старт";
+                        this.style.backgroundColor = "green";
+                        this.style.color = "white";
+                        document.querySelector('#reset').disabled = false;
+                    }
+                });
 
+                document.querySelector('#start_stop').style.backgroundColor = "green";
+                document.querySelector('#start_stop').style.color = "white";
+                setInterval(tik, 10);
+
+            </script>
+    </html>
 
 Пример - Тајмер
 ---------------
@@ -226,7 +228,7 @@
 - ``input`` поље типа ``time`` којим се задаје време преостало до активирања звука
 - ``input`` поље типа ``checkbox`` за укључивање тајмера, тј за отпочињање одбројавања.
 
-Клик на ``checkbox`` поље активираће функцију ``promenjenPrekidac``, а свака промена на пољу ``time`` активираће функцију ``postavljenoVreme``.
+Клик на ``checkbox`` поље активираће анонимну функцију задату испод коментара ``promenjeno stanje prekidaca``, а свака промена на пољу ``time`` активираће анонимну функцију задату испод коментара ``promenjena vrednost tajmera``.
 
 .. code-block:: html
 
@@ -239,16 +241,18 @@
 
         <form>
             <span margin-right="2px">Преостало време</span>
-            <input autofocus id="vreme" type="time" step="1" value="00:00:10" onchange="postavljenoVreme()"/>
-            Укључи: <input type="checkbox" id="prekidac" onclick="promenjenPrekidac()">
+            <input autofocus id="vreme" type="time" step="1" value="00:00:10""/>
+            Укључи: <input type="checkbox" id="prekidac"/>
         </form>
     </body>
 
-Функција ``postavljenoVreme`` зауставља претходно одбројавање (ако је било покренуто) и омогућава кориснику да укључи тајмер и тиме почне, односно настави одбројавање.
+Функција везана за промену вредности тајмера зауставља претходно одбројавање (ако је било покренуто) и омогућава кориснику да укључи тајмер и тиме почне, односно настави одбројавање.
 
-Функција ``promenjenPrekidac`` прво проверава да ли је тајмер управо укључен или искључен помоћу ``checkbox`` поља. Ако је укључен, израчунава се преостало време у секундама и започиње одбројавање. Ако је тајмер искључен, зауставља се одбројавање.
+Функција везана за промену стања прекидача прво проверава да ли је тајмер управо укључен или искључен кликом на ``checkbox`` поље. Ако је укључен, израчунава се преостало време у секундама и започиње одбројавање. Ако је тајмер искључен, зауставља се одбројавање.
 
-Осим ове две функције, потребна је још функција која се извршава сваке секунде (док траје одбрјавање) и ажурира преостало време (функција ``tik``), и функција која покреће аудио и искључује тајмер (функција ``sviraj``).
+Осим ове две функције, потребна је још функција која се извршава сваке секунде (док траје одбројавање) и ажурира преостало време (функција ``tik``), и функција која покреће аудио и искључује тајмер (функција ``sviraj``).
+
+У оквиру ове веб странице можете да испробате сву функционалност осим покретања звучног фајла. Да би пример био потпуно функционалан, предлажемо да га копирате у неки фајл са екстензијом *.html* на вашем рачунару, а затким да измените атрибут *src* елемента *source*, тако да садржи путању до постојећег фајла на вашем рачунару.
 
 Следи комплетан кôд:
 
@@ -260,19 +264,35 @@
     <html lang="sr-Cyrl">
         <head>
             <title>Тајмер</title>
+        </head>
+        <body>
+            <h1>Тајмер</h1>
+            <audio id="muzikica" controls>
+              <source src="../../_images/js/ding.mp3" type="audio/mpeg">
+              Ваш прегледач не подржава аудио елемент.
+            </audio>
+
+            <form>
+                <span margin-right="2px">Преостало време</span>
+                <input autofocus id="vreme" type="time" step="1" value="00:00:10"/>
+                Укључи: <input type="checkbox" id="prekidac"/>
+            </form>
+        </body>
             <script>
 
                 let tajmer = undefined;
                 let preostaloVreme = 0;
-
-                function postavljenoVreme() {
+                
+                // promenjena vrednost tajmera
+                document.getElementById('vreme').addEventListener('change', function(dogadjaj) {
                     let checkBox = document.getElementById("prekidac");
                     checkBox.disabled = false;
                     checkBox.checked = false;
                     clearInterval(tajmer);
-                }
+                });
 
-                function promenjenPrekidac() {
+                // promenjeno stanje prekidaca
+                document.getElementById('prekidac').addEventListener('click', function(dogadjaj) {
                     let ukljucen = document.getElementById("prekidac").checked;
                     if (ukljucen) {
                         let t = document.getElementById("vreme").value;
@@ -289,7 +309,7 @@
                     else {
                         clearInterval(tajmer);
                     } 
-                }
+                });
 
                 function tik() {
                     preostaloVreme--;
@@ -314,20 +334,6 @@
                     checkBox.disabled = true;
                 }
             </script>
-        </head>
-        <body>
-            <h1>Тајмер</h1>
-            <audio id="muzikica" controls>
-              <source src="../../_images/js/ding.mp3" type="audio/mpeg">
-              Ваш прегледач не подржава аудио елемент.
-            </audio>
-
-            <form>
-                <span margin-right="2px">Преостало време</span>
-                <input autofocus id="vreme" type="time" step="1" value="00:00:10" onchange="postavljenoVreme()"/>
-                Укључи: <input type="checkbox" id="prekidac" onclick="promenjenPrekidac()">
-            </form>
-        </body>
     </html>
 
 Пример - Аларм
@@ -347,17 +353,33 @@
     <html lang="sr-Cyrl">
         <head>
             <title>Аларм</title>
+        </head>
+        <body>
+            <h1>Аларм</h1>
+            <audio id="muzikica" controls>
+              <source src="../../_images/js/ding.mp3" type="audio/mpeg">
+              Ваш прегледач не подржава аудио елемент.
+            </audio>
+
+            <form>
+                <span margin-right="2px">Време аларма</span>
+                <input autofocus id="vreme" type="time" step="1"/>
+                Укључи: <input type="checkbox" id="prekidac"/>
+            </form>
+        </body>
             <script>
 
                 let tajmer = undefined;
 
-                function postavljenoVreme() {
+                // promenjena vrednost tajmera
+                document.getElementById('vreme').addEventListener('change', function(dogadjaj) {
                     let checkBox = document.getElementById("prekidac");
                     checkBox.disabled = false;
                     checkBox.checked = false;
-                }
+                });
 
-                function promenjenPrekidac() {
+                // promenjeno stanje prekidaca
+                document.getElementById('prekidac').addEventListener('click', function(dogadjaj) {
                     let aktiviran = document.getElementById("prekidac").checked;
                     if (aktiviran) {
                         let sada = new Date();
@@ -374,7 +396,7 @@
                     else {
                         clearInterval(tajmer);
                     } 
-                }
+                });
 
                 function sviraj() { 
                     document.getElementById("muzikica").play(); 
@@ -383,18 +405,4 @@
                 } 
 
             </script>
-        </head>
-        <body>
-            <h1>Аларм</h1>
-            <audio id="muzikica" controls>
-              <source src="../../_images/js/ding.mp3" type="audio/mpeg">
-              Ваш прегледач не подржава аудио елемент.
-            </audio>
-
-            <form>
-                <span margin-right="2px">Време аларма</span>
-                <input autofocus id="vreme" type="time" step="1" onchange="postavljenoVreme()"/>
-                Укључи: <input type="checkbox" id="prekidac" onclick="promenjenPrekidac()">
-            </form>
-        </body>
     </html>

@@ -65,20 +65,22 @@
     :language: javascript
     :nocodelens:
 
-    function putIZavrsnaBrzina(t, v0, a) {
-        let v1 = v0 + a*t;       // брзина после t секунди (завршна)
-        let vsr = (v0 + v1) / 2; // средња брзина
-        put = vsr * t;           // пређени пут
-        return [put, v1];
+    function putIZavrsnaBrzina(t, vpoc, a) {
+        let vzav = vpoc + a*t;        // брзина после t секунди (завршна)
+        let vsr = (vpoc + vzav) / 2;  // средња брзина
+        put = vsr * t;                // пређени пут
+        return [put, vzav];
     }
 
     // дати подаци
-    let t1 = 3, v0 = 0, a1 = 2, t2 = 10, a2 = 0, a3 = -6;
-    
-    let [s1, v1] = putIZavrsnaBrzina(t1, v0, a1);
-    let [s2, v2] = putIZavrsnaBrzina(t2, v1, a2);
-    let t3 = v2 / Math.abs(a3);
-    let [s3, v3] = putIZavrsnaBrzina(t3, v2, a3);
+    let a01 = 2, a12 = 0, a23 = -6;
+    let t01 = 3, t12 = 10;
+    let v0 = 0;
+
+    let [s1, v1] = putIZavrsnaBrzina(t01, v0, a01);
+    let [s2, v2] = putIZavrsnaBrzina(t12, v1, a12);
+    let t23 = v2 / Math.abs(a23);
+    let [s3, v3] = putIZavrsnaBrzina(t23, v2, a23);
     alert(`Укупан пређени пут је ${(s1+s2+s3).toFixed(2)}.`);
 
 |
