@@ -23,7 +23,7 @@
     :align: left
 
     ``a + b``,                         :math:`a + b`
-    ``a * b``,                         :math:`a \cdot b` (или :math:`a b`)
+    ``a * b``,                         :math:`a \cdot b` (или само :math:`a b`)
     ``a / b - c``,                     :math:`{a \over b} - c`
     ``a / (b - c)``,                   :math:`a \over {b-c}`
     ``a / b / c``,                     :math:`{a \over b} \over c`
@@ -31,6 +31,7 @@
     ``2 ** (n + 1)``,                  :math:`2^{n+1}`
     ``2 ** n + 1``,                    :math:`2^n + 1`
     ``Math.sqrt(Math.abs(x)+1)``,      :math:`\sqrt{|x| + 1}`
+    ``Math.sqrt(Math.abs(x))+1``,      :math:`\sqrt{|x|} + 1`
     ``Math.sqrt(x ** 2 + y ** 2)``,    :math:`\sqrt{x^2 + y^2}`
     ``Math.sin(2*x + Math.PI/4)``,     :math:`\sin(2 \cdot x + {\pi \over 4})`
 
