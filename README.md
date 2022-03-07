@@ -1,4 +1,4 @@
-# Веб дизајн и клијентско веб програмирање за трећи разред гимназије
+# Veb dizajn i klijentsko veb programiranje za treći razred gimnazije
 
 Ovaj repozitorijum posvećen je kursevima za treći razred gimnazije za nastavnu temu Programiranje. Kursevi za prirodni i društveni smer se na Petljinom portalu nalaze ovde: https://petlja.org/kurs/488/ , https://petlja.org/kurs/489
 
