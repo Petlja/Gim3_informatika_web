@@ -6,6 +6,8 @@ Ovaj repozitorijum posvećen je kursevima za treći razred gimnazije za nastavnu
 
 U ovom repozitorijumu se nalazi izvorna forma sadržaja koju pomoću alata [PetljaDoc](https://github.com/Petlja/PetljaDoc) možete konvertovati u skup *HTML* strana.
 
+Napomena: pre pokretanja alata PetljaDoc potrebno je da podesite verziju priručnika koju ćete konvertovati u *HTML* komandom `postavi.bat prirodni` ili `postavi.bat drustveni`.
+
 Na https://petlja.github.io/Gim3_informatika_web možete pregledati na taj način dobijene *HTML* strane.
 
 ## License
