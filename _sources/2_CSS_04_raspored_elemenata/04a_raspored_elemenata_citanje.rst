@@ -45,7 +45,7 @@
     .content div.left {  width: 50%;  }
     .content div.right {  width: 50%;  }
 
-Када на сајту `<https://jsbin.com?html,css,output>`_ унесемо овај *HTML* и *CSS* садржај, добиjaмо следећи резултат:
+Када на сајту `<https://jsbin.com?html,css,output>`_ унесемо овај *HTML* и *CSS* садржај, добијамо следећи резултат:
  
 .. image:: ../../_images/css/jsbin_wikistrana_struktura.png
     :width: 750px
